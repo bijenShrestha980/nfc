@@ -1,0 +1,174 @@
+.dashboard-inner-container {
+  .react-switch {
+    box-shadow: rgb(215 215 215 / 16%) 0px 1px 4px,
+      rgb(255 255 255) 0px 0px 1px 2px;
+    .react-switch-bg {
+      height: 25px !important;
+      width: 50px !important;
+      div {
+        height: 25px !important;
+      }
+    }
+    .react-switch-handle {
+      height: 18px !important;
+      width: 18px !important;
+      top: 12.072% !important;
+      left: 1.5px;
+    }
+  }
+  .display-switch-container {
+    .react-switch-biolink {
+      box-shadow: rgb(215 215 215 / 16%) 0px 1px 4px,
+        rgb(255 255 255) 0px 0px 1px 2px;
+      .react-switch-bg {
+        height: 20px !important;
+        width: 30px !important;
+        div {
+          height: 20px !important;
+        }
+      }
+      .react-switch-handle {
+        height: 15px !important;
+        width: 15px !important;
+        top: 10.42% !important;
+        left: -5.5px;
+        opacity: 0;
+      }
+    }
+  }
+  .card-manage-biolink {
+    @media (max-width: 769px) {
+      input.form-control {
+        padding: 5px 20px;
+        text-align: center;
+      }
+      // .form-control {
+      //   padding: 5px 0px !important;
+      // }
+    }
+  }
+  .flag-select {
+    position: absolute;
+    width: 20px !important;
+  }
+  .flag-input {
+    padding-left: 40px;
+  }
+  @media (max-width: 769px) {
+    .flag {
+      height: 50px !important;
+      width: 20px !important;
+      right: 45px;
+    }
+    .flag-select {
+      right: 46px;
+      position: absolute;
+      width: 20px;
+    }
+  }
+
+  @media (max-width: 885px) {
+    padding: 0;
+  }
+  .links-container-biolink {
+    .right {
+      p {
+        padding: 10px 0 0 15px;
+        margin: 0;
+      }
+      span {
+        color: #0d6efd;
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    .card-manage-biolink {
+      .content-container {
+        // padding: 10px 0;
+        .item {
+          // padding: 0;
+          .right {
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+.accordian {
+  padding: 0 25px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: none;
+  margin: 20px 0 20px 0;
+  @media (max-width: 1055px) {
+    padding: 0;
+  }
+  @media (max-width: 769px) {
+    h2 {
+      font-size: 18px !important;
+    }
+  }
+
+  .accordion-item {
+    padding: 0;
+    border: none;
+    outline: none;
+  }
+  @media (max-width: 769px) {
+    .accordion-button {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+  }
+  .accordion-header {
+    button {
+      background-color: #fff;
+      border-color: #fff;
+      outline: 0;
+    }
+    .accordion-button:focus {
+      z-index: 3;
+      border-color: #fff;
+      outline: 0;
+    }
+  }
+  .accordion-body {
+    .business-card-container {
+      .react-switch {
+        box-shadow: rgb(215 215 215 / 16%) 0px 1px 4px,
+          rgb(255 255 255) 0px 0px 1px 2px;
+        .react-switch-bg {
+          height: 25px !important;
+          width: 50px !important;
+          div {
+            height: 25px !important;
+          }
+        }
+        .react-switch-handle {
+          height: 18px !important;
+          width: 18px !important;
+          top: 12.062% !important;
+          left: 1.5px;
+        }
+      }
+    }
+    @media (max-width: 1055px) {
+      padding: 0;
+      .input-group {
+        flex-direction: column;
+
+        label {
+          width: 100%;
+          text-align: center;
+        }
+        input {
+          width: 100%;
+        }
+        .business-card-container {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}

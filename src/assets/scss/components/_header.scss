@@ -1,0 +1,85 @@
+.app-header {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .sub-menu-container {
+    position: relative;
+    transition: all 0.3s ease;
+    z-index: 20;
+  }
+  .sub-menu-container-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .sub-menu-container-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .sub-menu-container-exit {
+    opacity: 1;
+  }
+  .sub-menu-container-exit-active {
+    opacity: 0;
+  }
+  .sub-menu {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: calc(100% + 15px);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    z-index: 10;
+    border-radius: 12px;
+    overflow: hidden;
+    li {
+      width: 100%;
+      background-color: $color-grey-lighter;
+      border: none;
+      transition: all 0.3s ease;
+      a {
+        display: block;
+        color: $color-grey-dark;
+        text-decoration: none;
+        padding: 15px 20px;
+      }
+      &:hover {
+        background-image: linear-gradient(to right, #36ada9, #41cfe3);
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+  .avatar-container {
+    &:hover {
+      .sub-menu {
+        display: block;
+      }
+    }
+  }
+}
+.avatar-container {
+  width: 35px;
+}
+.MuiBox-root {
+  .profile-image {
+    width: 100%;
+    .left {
+      width: 100%;
+      .image-container {
+        width: 100%;
+        img {
+          height: 100%;
+          object-fit: contain;
+          border-radius: 0 !important;
+        }
+      }
+    }
+    .right {
+      display: none;
+    }
+  }
+}

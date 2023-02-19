@@ -1,0 +1,64 @@
+.stats-card {
+  // background-image: linear-gradient(to right, #37aeaa, #1f5fc0);
+  margin-bottom: 30px;
+  height: 120px;
+  // padding-top: 20px;
+
+  h2,
+  p {
+    color: $white;
+  }
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  p {
+    margin-bottom: 8px;
+  }
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    .image-container {
+      width: 17px;
+      svg {
+        .cls-1 {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
+.card1 {
+  background-color: #468bc9;
+}
+
+.card2 {
+  background-color: #2cc1be;
+}
+.card3 {
+  background-color: #f68b52;
+}
+.card4 {
+  background-color: #6abd45;
+}
+.card5 {
+  background-color: #652d91;
+}
+
+.noDisplay {
+  display: none;
+}
+.spacing {
+  padding-right: 0px;
+}
+
+.links {
+  .stats-card {
+    margin-bottom: 10px;
+  }
+}

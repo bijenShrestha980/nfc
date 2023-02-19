@@ -1,0 +1,88 @@
+.chart {
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  @media (max-width: 767px) {
+    display: none;
+  }
+  .chart-top {
+    display: flex;
+    justify-content: space-between;
+    .button-container {
+      display: flex;
+      column-gap: 10px;
+      .button {
+        &.active {
+          button {
+            background-color: #37aeaa;
+            color: #f2f2f2;
+          }
+        }
+        button {
+          padding: 6px 10px;
+          border: none;
+        }
+      }
+    }
+    .color-box {
+      .text-container {
+        display: flex;
+        column-gap: 5px;
+        align-items: center;
+        &::before {
+          content: "";
+          width: 20px;
+          height: 10px;
+        }
+        &:nth-child(1) {
+          &::before {
+            background-color: #468bc9;
+          }
+        }
+        &:nth-child(2) {
+          &::before {
+            background-color: #2cc1be;
+          }
+        }
+        &:nth-child(3) {
+          &::before {
+            background-color: #f68b52;
+          }
+        }
+        &:nth-child(4) {
+          &::before {
+            background-color: #6abd45;
+          }
+        }
+        &:nth-child(5) {
+          &::before {
+            background-color: #652d91;
+          }
+        }
+        p {
+          margin: 0px;
+        }
+      }
+    }
+  }
+
+  .chart-container {
+    display: flex;
+    justify-content: space-between;
+    // column-gap: 10px;
+  }
+
+  .chartTitle {
+    margin-bottom: 20px;
+    color: #423e3e;
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight: 600;
+  }
+}
+.recharts-wrapper {
+  max-width: 100%;
+  svg {
+    width: 100%;
+  }
+}
